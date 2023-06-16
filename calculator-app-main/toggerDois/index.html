@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div class="content">
+    <span class="parteCima">
+      <div class="parteCima-text">
+        <h1 class="calc">calc</h1>
+        <div class="treme">
+          <p class="tremeText">TREME</p>
+          <span class="number">
+            <p class="num">
+              <a href="../index.html">1</a>
+              <a href="index.html">2</a>
+              <a href="../toggerTres/index.html">3</a>
+            </p>
+            <p class="togger"><input type="radio" name="radio" id="togger"></p>
+          </span>
+        </div>
+      </div>
+      <span class="campoNumber">
+        <input type="number" name="number" id="resultado" placeholder="0">
+      </span>
+    </span>
+    <section class="tela">
+      <article class="teclado">
+        <span>
+          <button onclick="calcular('valor', 7)">7</button>
+          <button onclick="calcular('valor', 8)">8</button>
+          <button onclick="calcular('valor', 9)">9</button>
+          <button id="btnDiferente" onclick="calcular('acao', 'c')">DEL</button>
+        </span>
+        <span>
+          <button onclick="calcular('valor', 4)" >4</button>
+          <button onclick="calcular('valor', 5)" >5</button>
+          <button onclick="calcular('valor', 6)" >6</button>
+          <button onclick="calcular('acao', '+')">+</button>
+        </span>
+        <span>
+          <button onclick="calcular('valor', 1)">1</button>
+          <button onclick="calcular('valor', 2)" >2</button>
+          <button onclick="calcular('valor', 3)" >3</button>
+          <button onclick="calcular('acao', '-')">-</button>
+        </span>
+        <span>
+          <button onclick="calcular('acao', '.')">.</button>
+          <button onclick="calcular('valor', 0)">0</button>
+          <button onclick="calcular('acao', '/')">/</button>
+          <button onclick="calcular('acao', '*')">X</button>
+        </span>
+        <span class="btns">
+          <button id="btnDiferente" onclick="calcular('acao', 'c')">RESET</button>
+          <button id="btnCalcular" onclick="calcular('acao', '=')">=</button>
+        </span>
+      </article>
+    </section>
+  </div>
+  <script src="../index.js"></script>
+</body>
+</html>
